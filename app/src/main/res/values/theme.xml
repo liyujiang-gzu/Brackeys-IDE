@@ -18,7 +18,7 @@
 
 <resources>
 
-    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="BaseTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorSurface">@color/colorSurface</item>
@@ -33,7 +33,8 @@
         <item name="colorOnError">@color/colorOnError</item>
         <item name="colorOnBackground">@color/colorOnBackground</item>
 
-        <item name="colorBackgroundFloating">?colorSurface</item>
+        <item name="colorBackgroundFloating">@color/colorSurface</item>
+
         <item name="snackbarStyle">@style/Widget.AppTheme.Snackbar</item>
         <item name="snackbarButtonStyle">@style/Widget.AppTheme.TextButton</item>
         <item name="snackbarTextViewStyle">@style/Widget.AppTheme.SnackBarTextView</item>
@@ -42,11 +43,17 @@
         <item name="md_ripple_color">?colorControlHighlight</item>
         <item name="md_corner_radius">4dp</item>
 
-        <item name="android:statusBarColor">@color/colorStatusBar</item>
         <item name="android:windowBackground">@drawable/launch_screen</item>
-        <item name="android:navigationBarColor">?colorSecondaryVariant</item>
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:statusBarColor">@color/colorLegacyLightStatusBar</item>
+        <item name="android:navigationBarColor">@color/colorLegacyLightNavigationBar</item>
+
+        <!--<item name="android:windowLightStatusBar">false</item>-->
+        <!--<item name="android:windowLightNavigationBar">false</item>-->
     </style>
 
 </resources>

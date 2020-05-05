@@ -24,7 +24,7 @@ class PreferenceHandler(private val rxSharedPreferences: RxSharedPreferences) {
 
     companion object {
         // Look And Feel
-        //const val KEY_THEME = "THEME_1"
+        const val KEY_INTERFACE_THEME = "INTERFACE_THEME"
         const val KEY_COLOR_SCHEME = "COLOR_SCHEME"
         const val KEY_FULLSCREEN_MODE = "FULLSCREEN_MODE"
 
@@ -62,6 +62,7 @@ class PreferenceHandler(private val rxSharedPreferences: RxSharedPreferences) {
         const val KEY_SORT_MODE = "SORT_MODE"
     }
 
+    fun getInterfaceTheme(): Preference<String> = rxSharedPreferences.getString(KEY_INTERFACE_THEME, "DARK")
     fun getColorScheme(): Preference<String> = rxSharedPreferences.getString(KEY_COLOR_SCHEME, "964c249d-ad3c-4d85-8010-f3d55c1ae0a2") // Darcula UUID
     fun getFullscreenMode(): Preference<Boolean> = rxSharedPreferences.getBoolean(KEY_FULLSCREEN_MODE, false)
 

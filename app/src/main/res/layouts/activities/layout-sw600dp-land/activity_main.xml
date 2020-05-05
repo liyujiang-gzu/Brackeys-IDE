@@ -34,7 +34,7 @@
     <View
         android:layout_width="2dp"
         android:layout_height="match_parent"
-        android:background="?colorSecondaryVariant"/>
+        android:background="?android:listDivider"/>
 
     <fragment
         android:layout_width="match_parent"

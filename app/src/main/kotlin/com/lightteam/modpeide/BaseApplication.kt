@@ -17,6 +17,9 @@
 
 package com.lightteam.modpeide
 
+import android.content.Context
+import androidx.appcompat.app.AppCompatDelegate
+import com.lightteam.modpeide.data.storage.keyvalue.ThemeStorage
 import com.lightteam.modpeide.internal.di.app.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
@@ -27,6 +30,18 @@ class BaseApplication : DaggerApplication() {
         const val STANDARD = "com.KillerBLS.modpeide"
         const val ULTIMATE = "com.LightTeam.modpeidepro"
     }
+
+    override fun attachBaseContext(base: Context) {
+        val themeStorage = ThemeStorage(base)
+        val darkMode = if (themeStorage.isDarkModeEnabled()) {
+            AppCompatDelegate.MODE_NIGHT_YES
+        } else {
+            AppCompatDelegate.MODE_NIGHT_NO
+        }
+        AppCompatDelegate.setDefaultNightMode(darkMode)
+        super.attachBaseContext(base)
+    }
+
 
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
         return DaggerAppComponent.factory().create(this)

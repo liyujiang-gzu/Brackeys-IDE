@@ -20,6 +20,12 @@
 
     <PreferenceCategory android:title="@string/pref_category_look_and_feel">
 
+        <com.lightteam.modpeide.ui.settings.customview.ThemePreference
+            android:title="@string/pref_interface_theme_title"
+            android:summary="@string/pref_interface_theme_summary"
+            android:defaultValue="DARK"
+            android:key="INTERFACE_THEME"/>
+
         <Preference
             android:title="@string/pref_color_scheme_title"
             android:summary="@string/pref_color_scheme_summary"

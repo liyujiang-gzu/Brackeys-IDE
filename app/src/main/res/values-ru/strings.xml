@@ -152,6 +152,9 @@
     <string name="store_feature_6">Проверка ошибок</string>
     <string name="store_feature_7">Вставка цвета</string>
 
+    <string name="theme_dark">Темная</string>
+    <string name="theme_light">Светлая</string>
+
     <string name="font_support_ligatures">* Поддерживает лигатуры</string>
 
     <string name="pref_header_application_title">Приложение</string>
@@ -176,6 +179,8 @@
     <string name="pref_category_about">О программе</string>
     <string name="pref_category_contribute">Внести вклад</string>
 
+    <string name="pref_interface_theme_title">Тема интерфейса</string>
+    <string name="pref_interface_theme_summary">Определяет внешний вид всех визуальных элементов пользовательского интерфейса.</string>
     <string name="pref_color_scheme_title">Цветовая схема</string>
     <string name="pref_color_scheme_summary">Настройте цветовую схему подсветки синтаксиса.</string>
     <string name="pref_fullscreen_title">Полноэкранный режим</string>

@@ -156,6 +156,9 @@
     <string name="store_feature_6">Error checking</string>
     <string name="store_feature_7">Color picker</string>
 
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+
     <string name="font_panagram" translatable="false">the quick brown fox jumps over the lazy dog\n1234567890.:,;\'(!?) +-*/=</string>
     <string name="font_support_ligatures">* Support ligatures</string>
 
@@ -181,6 +184,8 @@
     <string name="pref_category_about">About</string>
     <string name="pref_category_contribute">Contribute</string>
 
+    <string name="pref_interface_theme_title">Interface Theme</string>
+    <string name="pref_interface_theme_summary">The interface theme defines the appearance of all visual elements of the user interface.</string>
     <string name="pref_color_scheme_title">Color Scheme</string>
     <string name="pref_color_scheme_summary">Configure the syntax highlighting color scheme.</string>
     <string name="pref_fullscreen_title">Full screen</string>
